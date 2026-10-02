@@ -1,0 +1,612 @@
+name: SV_PA_COPILOT
+description: Member-anchored prior-authorization insight model for a PA review analyst.
+  Exposes member eligibility, clinical summary, financial accumulators, event timeline,
+  PA requests with per-criterion evidence (MET / UNMET / INDETERMINATE), regulatory
+  SLA tracking, decision audit history, duplicate and safety flags, historical decision
+  precedent, and provider network and gold-card status. This model reports evidence
+  only. It must never be used to recommend, predict or rank an approval, denial or
+  pend decision; the determination is made by the analyst.
+tables:
+  - name: VW_MEMBER_ELIGIBILITY
+    description: Member eligibility snapshot. No SSN, address, email or phone exposed.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_MEMBER_ELIGIBILITY
+    primary_key:
+      columns:
+        - MEMBER_ID
+    dimensions:
+      - name: MEMBER_ID
+        expr: MEMBER_ID
+        data_type: VARCHAR
+      - name: MEMBER_NAME
+        expr: MEMBER_NAME
+        data_type: VARCHAR
+      - name: AGE_YEARS
+        expr: AGE_YEARS
+        data_type: NUMBER
+      - name: GENDER
+        expr: GENDER
+        data_type: VARCHAR
+      - name: ENROLLMENT_STATUS
+        expr: ENROLLMENT_STATUS
+        data_type: VARCHAR
+      - name: LINE_OF_BUSINESS
+        expr: LINE_OF_BUSINESS
+        data_type: VARCHAR
+      - name: PLAN_ID
+        expr: PLAN_ID
+        data_type: VARCHAR
+      - name: IS_ELIGIBLE_TODAY
+        expr: IS_ELIGIBLE_TODAY
+        data_type: BOOLEAN
+      - name: HAS_COVERAGE_GAP
+        expr: HAS_COVERAGE_GAP
+        data_type: BOOLEAN
+    time_dimensions:
+      - name: DATE_OF_BIRTH
+        expr: DATE_OF_BIRTH
+        data_type: DATE
+      - name: COVERAGE_START_DATE
+        expr: COVERAGE_START_DATE
+        data_type: DATE
+  - name: VW_MEMBER_CLINICAL_SUMMARY
+    description: 'Clinical summary per member: condition counts, medications, BMI,
+      labs, conservative care.'
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_MEMBER_CLINICAL_SUMMARY
+    primary_key:
+      columns:
+        - MEMBER_ID
+    dimensions:
+      - name: MEMBER_ID
+        expr: MEMBER_ID
+        data_type: VARCHAR
+      - name: ACTIVE_CONDITION_COUNT
+        expr: ACTIVE_CONDITION_COUNT
+        data_type: NUMBER
+      - name: CHRONIC_CONDITION_COUNT
+        expr: CHRONIC_CONDITION_COUNT
+        data_type: NUMBER
+      - name: ACTIVE_MEDICATION_COUNT
+        expr: ACTIVE_MEDICATION_COUNT
+        data_type: NUMBER
+      - name: TOTAL_CONSERVATIVE_VISITS
+        expr: TOTAL_CONSERVATIVE_VISITS
+        data_type: NUMBER
+      - name: IMAGING_STUDY_COUNT
+        expr: IMAGING_STUDY_COUNT
+        data_type: NUMBER
+    facts:
+      - name: BMI_VALUE
+        expr: BMI_VALUE
+        data_type: NUMBER
+      - name: HBA1C_VALUE
+        expr: HBA1C_VALUE
+        data_type: NUMBER
+  - name: VW_MEMBER_FINANCIAL
+    description: 'Current-year financial position: deductible, OOP, YTD spending.'
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_MEMBER_FINANCIAL
+    primary_key:
+      columns:
+        - MEMBER_ID
+    dimensions:
+      - name: MEMBER_ID
+        expr: MEMBER_ID
+        data_type: VARCHAR
+      - name: TOTAL_CLAIMS_COUNT
+        expr: TOTAL_CLAIMS_COUNT
+        data_type: NUMBER
+    facts:
+      - name: DEDUCTIBLE_REMAINING_AMT
+        expr: DEDUCTIBLE_REMAINING_AMT
+        data_type: NUMBER
+      - name: OOP_REMAINING_AMT
+        expr: OOP_REMAINING_AMT
+        data_type: NUMBER
+      - name: YTD_PLAN_PAID_AMT
+        expr: YTD_PLAN_PAID_AMT
+        data_type: NUMBER
+      - name: YTD_MEMBER_PAID_AMT
+        expr: YTD_MEMBER_PAID_AMT
+        data_type: NUMBER
+  - name: VW_MEMBER_TIMELINE
+    description: 'Unified chronological stream of all member events: PA, claims, contacts.'
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_MEMBER_TIMELINE
+    dimensions:
+      - name: TIMELINE_SK
+        expr: TIMELINE_SK
+        data_type: VARCHAR
+      - name: MEMBER_ID
+        expr: MEMBER_ID
+        data_type: VARCHAR
+      - name: EVENT_TYPE
+        expr: EVENT_TYPE
+        data_type: VARCHAR
+      - name: EVENT_DESC
+        expr: EVENT_DESC
+        data_type: VARCHAR
+      - name: RELATED_PA_ID
+        expr: RELATED_PA_ID
+        data_type: VARCHAR
+      - name: RELATED_CLAIM_ID
+        expr: RELATED_CLAIM_ID
+        data_type: VARCHAR
+    time_dimensions:
+      - name: EVENT_DATE
+        expr: EVENT_DATE
+        data_type: DATE
+    facts:
+      - name: AMOUNT
+        expr: AMOUNT
+        data_type: NUMBER
+  - name: VW_PA_REQUEST_360
+    description: Fully denormalized PA request with member, provider and clinical
+      context. One-stop view for PA review.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_PA_REQUEST_360
+    primary_key:
+      columns:
+        - PA_ID
+    dimensions:
+      - name: PA_ID
+        expr: PA_ID
+        data_type: VARCHAR
+      - name: MEMBER_ID
+        expr: MEMBER_ID
+        data_type: VARCHAR
+      - name: MEMBER_NAME
+        expr: MEMBER_NAME
+        data_type: VARCHAR
+      - name: MEMBER_AGE
+        expr: MEMBER_AGE
+        data_type: NUMBER
+      - name: MEMBER_GENDER
+        expr: MEMBER_GENDER
+        data_type: VARCHAR
+      - name: LINE_OF_BUSINESS
+        expr: LINE_OF_BUSINESS
+        data_type: VARCHAR
+      - name: PLAN_ID
+        expr: PLAN_ID
+        data_type: VARCHAR
+      - name: SERVICE_CATEGORY
+        expr: SERVICE_CATEGORY
+        data_type: VARCHAR
+      - name: PA_STATUS
+        expr: PA_STATUS
+        data_type: VARCHAR
+      - name: URGENCY_FLAG
+        expr: URGENCY_FLAG
+        data_type: VARCHAR
+      - name: REQUESTED_PROCEDURE_DESC
+        expr: REQUESTED_PROCEDURE_DESC
+        data_type: VARCHAR
+      - name: PRIMARY_DX_DESC
+        expr: PRIMARY_DX_DESC
+        data_type: VARCHAR
+      - name: ORDERING_PROVIDER_NAME
+        expr: ORDERING_PROVIDER_NAME
+        data_type: VARCHAR
+      - name: ORDERING_PROVIDER_SPECIALTY
+        expr: ORDERING_PROVIDER_SPECIALTY
+        data_type: VARCHAR
+      - name: NETWORK_STATUS
+        expr: NETWORK_STATUS
+        data_type: VARCHAR
+      - name: SLA_STATE
+        expr: SLA_STATE
+        data_type: VARCHAR
+      - name: CRITERIA_MET_COUNT
+        expr: CRITERIA_MET_COUNT
+        data_type: NUMBER
+      - name: CRITERIA_TOTAL_COUNT
+        expr: CRITERIA_TOTAL_COUNT
+        data_type: NUMBER
+    facts:
+      - name: ESTIMATED_ALLOWED_AMT
+        expr: ESTIMATED_ALLOWED_AMT
+        data_type: NUMBER
+      - name: DEDUCTIBLE_REMAINING_AMT
+        expr: DEDUCTIBLE_REMAINING_AMT
+        data_type: NUMBER
+  - name: VW_PA_CRITERIA_EVIDENCE
+    description: Criterion-level evidence for each PA. MET/UNMET/INDETERMINATE with
+      human-readable evidence. Non-decision-making.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_PA_CRITERIA_EVIDENCE
+    dimensions:
+      - name: CRITERIA_EVIDENCE_SK
+        expr: CRITERIA_EVIDENCE_SK
+        data_type: VARCHAR
+      - name: PA_ID
+        expr: PA_ID
+        data_type: VARCHAR
+      - name: MEMBER_ID
+        expr: MEMBER_ID
+        data_type: VARCHAR
+      - name: CRITERION_TYPE
+        expr: CRITERION_TYPE
+        data_type: VARCHAR
+      - name: CRITERION_RESULT
+        expr: CRITERION_RESULT
+        data_type: VARCHAR
+      - name: EVIDENCE_TEXT
+        expr: EVIDENCE_TEXT
+        data_type: VARCHAR
+      - name: CRITERION_DESC
+        expr: CRITERION_DESC
+        data_type: VARCHAR
+  - name: VW_PA_SLA_TRACKING
+    description: SLA tracking for all PA cases. Shows TAT, deadline, and breach status.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_PA_SLA_TRACKING
+    primary_key:
+      columns:
+        - PA_ID
+    dimensions:
+      - name: PA_ID
+        expr: PA_ID
+        data_type: VARCHAR
+      - name: LINE_OF_BUSINESS
+        expr: LINE_OF_BUSINESS
+        data_type: VARCHAR
+      - name: URGENCY_FLAG
+        expr: URGENCY_FLAG
+        data_type: VARCHAR
+      - name: SLA_STATE
+        expr: SLA_STATE
+        data_type: VARCHAR
+      - name: CLOCK_PAUSED_DAYS
+        expr: CLOCK_PAUSED_DAYS
+        data_type: NUMBER
+      - name: IS_OPEN
+        expr: IS_OPEN
+        data_type: BOOLEAN
+    time_dimensions:
+      - name: REGULATORY_DEADLINE_DATETIME_UTC
+        expr: REGULATORY_DEADLINE_DATETIME_UTC
+        data_type: TIMESTAMP_NTZ
+    facts:
+      - name: TAT_BUSINESS_DAYS
+        expr: TAT_BUSINESS_DAYS
+        data_type: NUMBER
+      - name: DAYS_UNTIL_DEADLINE
+        expr: DAYS_UNTIL_DEADLINE
+        data_type: NUMBER
+  - name: VW_PA_DECISION_AUDIT
+    description: Decision audit trail including original decisions and appeal outcomes.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_PA_DECISION_AUDIT
+    dimensions:
+      - name: DECISION_AUDIT_SK
+        expr: DECISION_AUDIT_SK
+        data_type: VARCHAR
+      - name: PA_ID
+        expr: PA_ID
+        data_type: VARCHAR
+      - name: DECISION_TYPE
+        expr: DECISION_TYPE
+        data_type: VARCHAR
+      - name: PA_STATUS
+        expr: PA_STATUS
+        data_type: VARCHAR
+      - name: DECISION_BY_ROLE
+        expr: DECISION_BY_ROLE
+        data_type: VARCHAR
+      - name: DENIAL_REASON_DESC
+        expr: DENIAL_REASON_DESC
+        data_type: VARCHAR
+      - name: APPEAL_OUTCOME
+        expr: APPEAL_OUTCOME
+        data_type: VARCHAR
+      - name: AUTO_ADJUDICATED_FLAG
+        expr: AUTO_ADJUDICATED_FLAG
+        data_type: BOOLEAN
+  - name: VW_PA_DUPLICATE_SAFETY
+    description: Duplicate detection and safety flags for PA cases.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_PA_DUPLICATE_SAFETY
+    primary_key:
+      columns:
+        - PA_ID
+    dimensions:
+      - name: PA_ID
+        expr: PA_ID
+        data_type: VARCHAR
+      - name: HAS_POTENTIAL_DUPLICATE
+        expr: HAS_POTENTIAL_DUPLICATE
+        data_type: BOOLEAN
+      - name: DUPLICATE_PA_ID
+        expr: DUPLICATE_PA_ID
+        data_type: VARCHAR
+      - name: HIGH_COST_FLAG
+        expr: HIGH_COST_FLAG
+        data_type: BOOLEAN
+      - name: NETWORK_CONCERN_FLAG
+        expr: NETWORK_CONCERN_FLAG
+        data_type: BOOLEAN
+    facts:
+      - name: DUPLICATE_SIMILARITY
+        expr: DUPLICATE_SIMILARITY
+        data_type: NUMBER
+  - name: VW_PA_PRECEDENT
+    description: Historical decision counts by requested service, diagnosis and LOB.
+      service_code unifies CPT/HCPCS with NDC so drug precedent is findable. approval_rate_pct
+      divides by DECIDED requests and is NULL when nothing was decided - it is a record
+      of past decisions, never a prediction.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_PA_PRECEDENT
+    dimensions:
+      - name: PRECEDENT_SK
+        expr: PRECEDENT_SK
+        data_type: VARCHAR
+      - name: SERVICE_CODE
+        expr: SERVICE_CODE
+        data_type: VARCHAR
+      - name: SERVICE_CODE_SYSTEM
+        expr: SERVICE_CODE_SYSTEM
+        data_type: VARCHAR
+      - name: REQUESTED_PROCEDURE_CODE
+        expr: REQUESTED_PROCEDURE_CODE
+        data_type: VARCHAR
+      - name: REQUESTED_NDC
+        expr: REQUESTED_NDC
+        data_type: VARCHAR
+      - name: PRIMARY_DX_ICD10
+        expr: PRIMARY_DX_ICD10
+        data_type: VARCHAR
+      - name: LINE_OF_BUSINESS
+        expr: LINE_OF_BUSINESS
+        data_type: VARCHAR
+      - name: TOTAL_REQUESTS
+        expr: TOTAL_REQUESTS
+        data_type: NUMBER
+      - name: DECIDED_COUNT
+        expr: DECIDED_COUNT
+        data_type: NUMBER
+      - name: APPROVED_COUNT
+        expr: APPROVED_COUNT
+        data_type: NUMBER
+      - name: DENIED_COUNT
+        expr: DENIED_COUNT
+        data_type: NUMBER
+    facts:
+      - name: APPROVAL_RATE_PCT
+        expr: APPROVAL_RATE_PCT
+        data_type: NUMBER
+  - name: VW_PROVIDER_NETWORK
+    description: Provider network summary with gold-card eligibility and approval
+      rates.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_PROVIDER_NETWORK
+    dimensions:
+      - name: PROVIDER_NPI
+        expr: PROVIDER_NPI
+        data_type: VARCHAR
+      - name: PROVIDER_NAME
+        expr: PROVIDER_NAME
+        data_type: VARCHAR
+      - name: PROVIDER_SPECIALTY
+        expr: PROVIDER_SPECIALTY
+        data_type: VARCHAR
+      - name: NETWORK_STATUS
+        expr: NETWORK_STATUS
+        data_type: VARCHAR
+      - name: GOLD_CARD_ELIGIBLE
+        expr: GOLD_CARD_ELIGIBLE
+        data_type: BOOLEAN
+      - name: TOTAL_PA_REQUESTS_6MO
+        expr: TOTAL_PA_REQUESTS_6MO
+        data_type: NUMBER
+    facts:
+      - name: APPROVAL_RATE_6MO_PCT
+        expr: APPROVAL_RATE_6MO_PCT
+        data_type: NUMBER
+  - name: VW_PA_WORKLIST
+    description: Active PA cases prioritized by urgency and SLA countdown. Use for
+      the analyst work queue.
+    base_table:
+      database: M360MART
+      schema: SERVING
+      table: VW_PA_WORKLIST
+    primary_key:
+      columns:
+        - PA_ID
+    dimensions:
+      - name: PA_ID
+        expr: PA_ID
+        data_type: VARCHAR
+      - name: MEMBER_ID
+        expr: MEMBER_ID
+        data_type: VARCHAR
+      - name: MEMBER_NAME
+        expr: MEMBER_NAME
+        data_type: VARCHAR
+      - name: LINE_OF_BUSINESS
+        expr: LINE_OF_BUSINESS
+        data_type: VARCHAR
+      - name: SERVICE_CATEGORY
+        expr: SERVICE_CATEGORY
+        data_type: VARCHAR
+      - name: URGENCY_FLAG
+        expr: URGENCY_FLAG
+        data_type: VARCHAR
+      - name: PA_STATUS
+        expr: PA_STATUS
+        data_type: VARCHAR
+      - name: SLA_STATE
+        expr: SLA_STATE
+        data_type: VARCHAR
+      - name: CRITERIA_MET_COUNT
+        expr: CRITERIA_MET_COUNT
+        data_type: NUMBER
+      - name: CRITERIA_TOTAL_COUNT
+        expr: CRITERIA_TOTAL_COUNT
+        data_type: NUMBER
+      - name: ORDERING_PROVIDER_NAME
+        expr: ORDERING_PROVIDER_NAME
+        data_type: VARCHAR
+      - name: REQUESTED_PROCEDURE_DESC
+        expr: REQUESTED_PROCEDURE_DESC
+        data_type: VARCHAR
+    facts:
+      - name: DAYS_UNTIL_DEADLINE
+        expr: DAYS_UNTIL_DEADLINE
+        data_type: NUMBER
+      - name: HOURS_UNTIL_DEADLINE
+        expr: HOURS_UNTIL_DEADLINE
+        data_type: NUMBER
+      - name: COMPLETENESS_PCT
+        expr: COMPLETENESS_PCT
+        data_type: NUMBER
+      - name: PRIORITY_SCORE
+        expr: PRIORITY_SCORE
+        data_type: NUMBER
+relationships:
+  - name: VW_PA_CRITERIA_EVIDENCE_TO_VW_PA_WORKLIST
+    left_table: VW_PA_CRITERIA_EVIDENCE
+    right_table: VW_PA_WORKLIST
+    join_type: inner
+    relationship_type: many_to_one
+    relationship_columns:
+      - left_column: PA_ID
+        right_column: PA_ID
+  - name: VW_PA_DECISION_AUDIT_TO_VW_PA_REQUEST_360
+    left_table: VW_PA_DECISION_AUDIT
+    right_table: VW_PA_REQUEST_360
+    join_type: inner
+    relationship_type: many_to_one
+    relationship_columns:
+      - left_column: PA_ID
+        right_column: PA_ID
+  - name: VW_PA_DUPLICATE_SAFETY_TO_VW_PA_REQUEST_360
+    left_table: VW_PA_DUPLICATE_SAFETY
+    right_table: VW_PA_REQUEST_360
+    join_type: inner
+    relationship_type: one_to_one
+    relationship_columns:
+      - left_column: PA_ID
+        right_column: PA_ID
+verified_queries:
+  - name: 0;1
+    question: Is member MBR-18847811 eligible today and what plan are they on?
+    sql: SELECT MEMBER_ID, MEMBER_NAME, AGE_YEARS, GENDER, LINE_OF_BUSINESS, PLAN_ID,
+      ENROLLMENT_STATUS, IS_ELIGIBLE_TODAY, HAS_COVERAGE_GAP, COVERAGE_START_DATE
+      FROM vw_member_eligibility WHERE MEMBER_ID = 'MBR-18847811'
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 1;1
+    question: What open prior authorization requests does this member have and how
+      close are they to the regulatory deadline?
+    sql: SELECT w.PA_ID, w.SERVICE_CATEGORY, w.URGENCY_FLAG, w.PA_STATUS, w.SLA_STATE,
+      w.DAYS_UNTIL_DEADLINE, w.HOURS_UNTIL_DEADLINE, w.CRITERIA_MET_COUNT, w.CRITERIA_TOTAL_COUNT,
+      w.COMPLETENESS_PCT, w.REQUESTED_PROCEDURE_DESC, w.ORDERING_PROVIDER_NAME FROM
+      vw_pa_worklist AS w WHERE w.MEMBER_ID = 'MBR-18847811' ORDER BY w.DAYS_UNTIL_DEADLINE
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 2;1
+    question: Show the criteria evidence for prior authorization PA-2026-000401 including
+      which criteria are indeterminate
+    sql: SELECT CRITERION_TYPE, CRITERION_RESULT, CRITERION_DESC, EVIDENCE_TEXT FROM
+      vw_pa_criteria_evidence WHERE PA_ID = 'PA-2026-000401' ORDER BY CASE criterion_result
+      WHEN 'UNMET' THEN 1 WHEN 'INDETERMINATE' THEN 2 ELSE 3 END, CRITERION_TYPE
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 3;1
+    question: What is this member's prior authorization history and what were the
+      outcomes?
+    sql: SELECT r.PA_ID, r.SERVICE_CATEGORY, r.REQUESTED_PROCEDURE_DESC, r.PRIMARY_DX_DESC,
+      r.PA_STATUS, r.URGENCY_FLAG, d.DECISION_TYPE, d.DENIAL_REASON_DESC, d.APPEAL_OUTCOME,
+      d.AUTO_ADJUDICATED_FLAG FROM vw_pa_request_360 AS r LEFT JOIN vw_pa_decision_audit
+      AS d ON d.PA_ID = r.PA_ID AND d.DECISION_TYPE = 'ORIGINAL' WHERE r.MEMBER_ID
+      = 'MBR-18847811' ORDER BY r.PA_ID
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 4;1
+    question: Which of this member's denied requests were appealed and what was the
+      appeal outcome?
+    sql: SELECT r.PA_ID, r.SERVICE_CATEGORY, r.REQUESTED_PROCEDURE_DESC, orig.DENIAL_REASON_DESC,
+      appeal.APPEAL_OUTCOME FROM vw_pa_request_360 AS r JOIN vw_pa_decision_audit
+      AS orig ON orig.PA_ID = r.PA_ID AND orig.DECISION_TYPE = 'ORIGINAL' JOIN vw_pa_decision_audit
+      AS appeal ON appeal.PA_ID = r.PA_ID AND appeal.DECISION_TYPE = 'APPEAL' WHERE
+      r.MEMBER_ID = 'MBR-18847811' ORDER BY r.PA_ID
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 5;1
+    question: How have requests for service code 59025 been decided historically?
+    sql: SELECT SERVICE_CODE, SERVICE_CODE_SYSTEM, PRIMARY_DX_ICD10, LINE_OF_BUSINESS,
+      TOTAL_REQUESTS, DECIDED_COUNT, APPROVED_COUNT, DENIED_COUNT, APPROVAL_RATE_PCT
+      FROM vw_pa_precedent WHERE SERVICE_CODE = '59025' AND DECIDED_COUNT > 0 ORDER
+      BY DECIDED_COUNT DESC
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 6;1
+    question: What is the network status and gold card eligibility for Dr. Provider-3384?
+    sql: SELECT PROVIDER_NPI, PROVIDER_NAME, PROVIDER_SPECIALTY, NETWORK_STATUS, GOLD_CARD_ELIGIBLE,
+      APPROVAL_RATE_6MO_PCT, TOTAL_PA_REQUESTS_6MO FROM vw_provider_network WHERE
+      PROVIDER_NAME = 'Dr. Provider-3384'
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 7;1
+    question: Does this member have any potential duplicate requests, high cost flags,
+      or network concerns?
+    sql: SELECT s.PA_ID, s.HAS_POTENTIAL_DUPLICATE, s.DUPLICATE_PA_ID, s.DUPLICATE_SIMILARITY,
+      s.HIGH_COST_FLAG, s.NETWORK_CONCERN_FLAG FROM vw_pa_duplicate_safety AS s JOIN
+      vw_pa_request_360 AS r ON r.PA_ID = s.PA_ID WHERE r.MEMBER_ID = 'MBR-18847811'
+      AND (s.HAS_POTENTIAL_DUPLICATE OR s.HIGH_COST_FLAG OR s.NETWORK_CONCERN_FLAG)
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 8;1
+    question: What is this member's deductible and out of pocket remaining?
+    sql: SELECT MEMBER_ID, DEDUCTIBLE_REMAINING_AMT, OOP_REMAINING_AMT, YTD_PLAN_PAID_AMT,
+      YTD_MEMBER_PAID_AMT, TOTAL_CLAIMS_COUNT FROM vw_member_financial WHERE MEMBER_ID
+      = 'MBR-18847811'
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 9;1
+    question: What is this member's clinical picture - conditions, medications, BMI
+      and HbA1c?
+    sql: SELECT MEMBER_ID, ACTIVE_CONDITION_COUNT, CHRONIC_CONDITION_COUNT, ACTIVE_MEDICATION_COUNT,
+      BMI_VALUE, HBA1C_VALUE, TOTAL_CONSERVATIVE_VISITS, IMAGING_STUDY_COUNT FROM
+      vw_member_clinical_summary WHERE MEMBER_ID = 'MBR-18847811'
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 10;1
+    question: What is the recent clinical and claim timeline for this member?
+    sql: SELECT EVENT_DATE, EVENT_TYPE, EVENT_DESC, RELATED_PA_ID, RELATED_CLAIM_ID,
+      AMOUNT FROM vw_member_timeline WHERE MEMBER_ID = 'MBR-18847811' ORDER BY EVENT_DATE
+      DESC LIMIT 50
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator
+  - name: 11;1
+    question: How many criteria are met, unmet, or indeterminate across this member's
+      open prior authorization requests?
+    sql: SELECT c.PA_ID, c.CRITERION_RESULT, COUNT(*) AS criterion_count FROM vw_pa_criteria_evidence
+      AS c JOIN vw_pa_worklist AS w ON w.PA_ID = c.PA_ID WHERE c.MEMBER_ID = 'MBR-18847811'
+      GROUP BY c.PA_ID, c.CRITERION_RESULT ORDER BY c.PA_ID, c.CRITERION_RESULT
+    verified_at: 1788318201
+    verified_by: Semantic Model Generator

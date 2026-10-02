@@ -1,0 +1,25 @@
+# Member360 PA Datamart - local pipeline dependencies
+# Verified to resolve cp314 wheels on Python 3.14.7 / win_amd64
+#
+# All pipeline code runs LOCALLY. Nothing executes on Snowflake compute except
+# DDL, COPY INTO, and the SERVING views.
+
+pandas==3.0.5
+# pyarrow pinned <24: snowflake-connector-python 4.7.2 [pandas] requires
+# 'pyarrow<24,>=14.0.1'. 25.x installs fine but emits an incompatible-dep
+# warning and is unsupported for arrow result fetching. 23.0.1 has a cp314 wheel.
+pyarrow==23.0.1
+requests==2.34.2
+# [secure-local-storage] pulls in `keyring`, which caches the OAuth id token.
+# Without it, every script invocation re-triggers a browser auth popup, which
+# would make the pipeline non-replicable in practice.
+snowflake-connector-python[secure-local-storage]==4.7.2
+
+# --- PA copilot app layer ---
+streamlit==1.51.0
+# Regulatory corpus: text + page numbers out of the CMS/OIG PDFs. Pure Python, so
+# no system libraries and no cloud round-trip for the 600-page CMS-0057-F rule.
+# Page numbers come free, which matters because they are part of the citation.
+pypdf==6.1.1
+# Radiology library: downscale teaching images before staging them.
+Pillow==12.0.0

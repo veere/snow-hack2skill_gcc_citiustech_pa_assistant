@@ -1,0 +1,12 @@
+# Downloaded datasets, logs, screenshots — all reproducible
+.cache/
+
+# IDE settings
+.vscode/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Debug DDL extracted to repo root
+_stmt_*.sql

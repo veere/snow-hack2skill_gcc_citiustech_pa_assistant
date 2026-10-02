@@ -1,0 +1,149 @@
+{
+  "_comment": "Member360 PA Datamart - single source of truth for pipeline configuration. All generator scripts read this; nothing is hardcoded in the generators.",
+
+  "project": {
+    "name": "member360-pa-datamart",
+    "version": "1.0.0"
+  },
+
+  "scale": {
+    "_comment": "Small profile: uses the Synthea 1K-patient sample directly with no upsampling. Member count is discovered from the fetched Synthea patients.csv at runtime; this is the cap.",
+    "profile": "small",
+    "max_members": 1000
+  },
+
+  "determinism": {
+    "_comment": "Every stochastic decision derives from this seed. Changing it changes the data; keeping it guarantees byte-identical reruns, which the determinism test asserts.",
+    "master_seed": 20260901,
+    "hash_algorithm": "sha256"
+  },
+
+  "date_anchor": {
+    "_comment": "Synthea sample data ends in 2020. PA work needs live SLA clocks, so the whole timeline is shifted forward deterministically: the latest source encounter is mapped to (today - recent_activity_buffer_days) and every other date shifts by the same integer offset, preserving all intervals exactly.",
+    "anchor_mode": "shift_to_today",
+    "recent_activity_buffer_days": 3,
+    "reference_date": null,
+    "_reference_date_note": "null = resolve to today at runtime. Set an ISO date (YYYY-MM-DD) to pin the pipeline for reproducible demos."
+  },
+
+  "paths": {
+    "cache": ".cache",
+    "bronze_out": "dataFilesBronze",
+    "silver_out": "dataFilesSilver",
+    "gold_out": "dataFilesGold",
+    "sql": "sql"
+  },
+
+  "open_datasets": {
+    "_comment": "All URLs HTTP-200 verified 2026-09-01. Each entry has a fallback strategy because CMS reorganizes file paths and community mirrors can disappear.",
+    "synthea": {
+      "enabled": true,
+      "required": true,
+      "url": "https://synthetichealth.github.io/synthea-sample-data/downloads/synthea_sample_data_csv_apr2020.zip",
+      "fallback_urls": [
+        "https://synthetichealth.github.io/synthea-sample-data/downloads/latest/synthea_sample_data_csv_latest.zip"
+      ],
+      "filename": "synthea_sample_data_csv_apr2020.zip",
+      "expected_mb": 8.6,
+      "role": "PRIMARY - referentially intact synthetic patient population across 16 CSVs"
+    },
+    "fda_ndc": {
+      "enabled": true,
+      "required": true,
+      "url": "https://www.accessdata.fda.gov/cder/ndctext.zip",
+      "fallback_urls": [],
+      "filename": "ndctext.zip",
+      "expected_mb": 10.3,
+      "role": "Real NDC drug codes, therapeutic classes, DEA schedule"
+    },
+    "icd10cm": {
+      "enabled": true,
+      "required": true,
+      "url": "https://www.cms.gov/files/zip/2026-code-descriptions-tabular-order.zip",
+      "fallback_urls": [
+        "https://www.cms.gov/files/zip/2025-code-descriptions-tabular-order.zip",
+        "https://www.cms.gov/files/zip/2024-code-descriptions-tabular-order.zip",
+        "https://raw.githubusercontent.com/k4m1113/ICD-10-CSV/master/codes.csv"
+      ],
+      "filename": "icd10cm_2026.zip",
+      "expected_mb": 2.1,
+      "role": "Real ICD-10-CM diagnosis codes + descriptions for the crosswalk"
+    },
+    "hcpcs": {
+      "enabled": true,
+      "required": true,
+      "url": "https://www.cms.gov/files/zip/october-2026-alpha-numeric-hcpcs-file.zip",
+      "fallback_urls": [
+        "https://www.cms.gov/files/zip/july-2026-alpha-numeric-hcpcs-file.zip",
+        "https://www.cms.gov/files/zip/january-2026-alpha-numeric-hcpcs-file.zip"
+      ],
+      "filename": "hcpcs_oct2026.zip",
+      "expected_mb": 2.4,
+      "role": "Real HCPCS Level II procedure codes + descriptions"
+    },
+    "synpuf_beneficiary": {
+      "enabled": true,
+      "required": false,
+      "url": "https://www.cms.gov/research-statistics-data-and-systems/downloadable-public-use-files/synpufs/downloads/de1_0_2008_beneficiary_summary_file_sample_1.zip",
+      "fallback_urls": [],
+      "filename": "de1_0_2008_beneficiary_summary_sample_1.zip",
+      "expected_mb": 3.0,
+      "role": "CALIBRATION ONLY - real Medicare cost-sharing distributions used to shape synthetic accumulators. Not a row source."
+    },
+    "nppes": {
+      "enabled": true,
+      "required": false,
+      "api_base": "https://npiregistry.cms.hhs.gov/api/",
+      "api_version": "2.1",
+      "_api_note": "state alone is rejected by the API; city+state or last_name is required.",
+      "query_cities": [
+        ["Boston", "MA"], ["Worcester", "MA"], ["Springfield", "MA"],
+        ["Cambridge", "MA"], ["Lowell", "MA"], ["Quincy", "MA"]
+      ],
+      "per_city_limit": 200,
+      "role": "Real NPIs where obtainable; deterministic synthetic NPIs (Luhn-valid) as fallback"
+    }
+  },
+
+  "snowflake": {
+    "_comment": "connection_name is used ONLY to look up the non-secret account/user/role from ~/.snowflake/connections.toml. Authentication itself is non-interactive and comes from an environment variable.",
+    "connection_name": "CE87905_Hack2Skill",
+    "database": "M360MART",
+    "warehouse": "COMPUTE_WH",
+    "schemas": {
+      "bronze": "BRONZE",
+      "silver": "SILVER",
+      "gold": "GOLD",
+      "serving": "SERVING"
+    },
+    "stage_prefix": "STG_",
+    "_auth_note": "Interactive browser OAuth is NOT supported. Its token expires mid-run and cannot work unattended. Set SNOWFLAKE_PAT (preferred), SNOWFLAKE_PRIVATE_KEY_PATH, or SNOWFLAKE_PASSWORD. Store the value with 'cortex secret store snowflake_pat --prompt' and inject it with 'cortex secret run --map snowflake_pat=SNOWFLAKE_PAT -- <command>' so it never lands on disk or in shell history.",
+    "load_batch_note": "One connection is opened per run and reused for every table."
+  },
+
+  "rbac": {
+    "app_role": "M360_APP_ROLE",
+    "engineer_role": "M360_ENGINEER_ROLE",
+    "_comment": "app_role is the Streamlit identity: USAGE on database + SERVING only, SELECT on views only. It must NOT be able to read BRONZE/SILVER/GOLD; the verifier asserts this negatively."
+  },
+
+  "governance": {
+    "_comment": "The assistant is exploratory and NON-decision-making. These column names are banned everywhere in the mart; the validator fails the build if any appears.",
+    "banned_column_substrings": [
+      "recommended_decision",
+      "recommend_approval",
+      "predicted_decision",
+      "predicted_outcome",
+      "suggested_decision",
+      "auto_decision_recommendation",
+      "should_approve",
+      "should_deny",
+      "approval_probability",
+      "denial_probability",
+      "decision_score"
+    ],
+    "identifiers_excluded_from_serving": [
+      "ssn", "ssn_last4", "email", "phone", "address_line1", "address_line2", "latitude", "longitude"
+    ]
+  }
+}

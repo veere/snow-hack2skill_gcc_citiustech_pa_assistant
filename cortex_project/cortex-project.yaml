@@ -1,0 +1,7 @@
+version: 1
+artifacts:
+  - path: SV_PA_COPILOT.sv.yaml
+    type: semantic_view
+    targets:
+      default:
+        object: M360MART.SERVING.SV_PA_COPILOT
