@@ -1,0 +1,55 @@
+Deploy
+PA Insight Copilot
+SELF-HOSTED
+Insight, not decisions. Every answer arrives with the query or citation behind it so you can verify it yourself. This copilot will not recommend or imply an approval, denial or pend — that determination is yours. Where evidence is missing it is reported as INDETERMINATE, never as a pass or a fail.
+
+Load member
+
+Refresh
+
+Walker122 Kuhic920
+MBR-18847811 · 105 yrs · M · 184 PA requests on record · loaded just now
+ELIGIBLE TODAY
+MARKETPLACE
+8 PAST DEADLINE
+40 OPEN
+
+Overview
+
+Ask
+
+Reference imaging
+
+Worth checking for this member
+
+Surfaced from this member's current state. Each one asks for evidence; none of them points toward an outcome.
+
+Which of this member's requests have passed their regulatory deadline?
+surfaced because 8 request(s) already show SLA_STATE = BREACHED
+
+Ask
+
+Which open request is closest to its regulatory deadline, and what rule sets it?
+surfaced because soonest deadline is -1.4 days away
+
+Ask
+
+Which criteria are UNMET or INDETERMINATE on this member's open requests?
+surfaced because 40 open request(s) awaiting review
+
+Ask
+
+What medications has this member tried, and is step therapy documented?
+surfaced because an open request is for a specialty drug
+
+Ask
+
+Ask
+
+Answers cite the SQL or the regulation behind them. Requests for a decision will be declined.
+
+edit
+
+Type a question first.
+
+Reads only the governed M360MART.SERVING layer — no access to raw bronze, silver or gold tables. No SSN, address, email or phone is exposed. Criteria are reported as MET / UNMET / INDETERMINATE and are never collapsed into an overall verdict.

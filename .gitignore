@@ -1,6 +1,3 @@
-# Downloaded datasets, logs, screenshots — all reproducible
-.cache/
-
 # IDE settings
 .vscode/
 

@@ -1,0 +1,17 @@
+Deploy
+PA Insight Copilot
+SELF-HOSTED
+Insight, not decisions. Every answer arrives with the query or citation behind it so you can verify it yourself. This copilot will not recommend or imply an approval, denial or pend — that determination is yours. Where evidence is missing it is reported as INDETERMINATE, never as a pass or a fail.
+error
+
+No member matches MBR-00000000
+
+Load member
+
+Refresh
+
+person_off
+
+No member matches MBR-00000000. Nothing is shown rather than a near match, so you are never looking at the wrong member. Check the identifier and try again.
+
+Reads only the governed M360MART.SERVING layer — no access to raw bronze, silver or gold tables. No SSN, address, email or phone is exposed. Criteria are reported as MET / UNMET / INDETERMINATE and are never collapsed into an overall verdict.

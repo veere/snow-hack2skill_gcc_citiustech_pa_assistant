@@ -1,0 +1,1191 @@
+{
+  "accepted": [
+    {
+      "file_name": "Severe_herniation_of_L4_L5_disc_png.jpg",
+      "body_region": "LUMBAR_SPINE",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "Severe herniation of L4-L5 disc.png",
+      "description": "A rather severe herniation of the L4-L5 disc; taken from my own MRI.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Severe_herniation_of_L4-L5_disc.png",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Severe_herniation_of_L4-L5_disc.png",
+      "licence": "CC0",
+      "attribution": "Jay Moore",
+      "width": 320,
+      "height": 340,
+      "bytes": 19103,
+      "sha256": "f60ff4abfc84a435b2cc52ff425ffa538d67b6e8bc53800d525995648dbef37e",
+      "search_terms": "lumbar disc herniation MRI"
+    },
+    {
+      "file_name": "L4_L5_disc_herniation_png.jpg",
+      "body_region": "LUMBAR_SPINE",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "L4-L5 disc herniation.png",
+      "description": "L4-L5 disc herniation",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:L4-L5_disc_herniation.png",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/L4-L5_disc_herniation.png",
+      "licence": "Public domain",
+      "attribution": "automatic work",
+      "width": 1366,
+      "height": 768,
+      "bytes": 128854,
+      "sha256": "747572c830b0b2b1693d45fdc76fedab9a7ce37f49fab1159cbad5584fb9e575",
+      "search_terms": "lumbar disc herniation MRI"
+    },
+    {
+      "file_name": "Prolapse_and_extrusion_of_disc_herniation_jpg.jpg",
+      "body_region": "LUMBAR_SPINE",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "Prolapse and extrusion of disc herniation.jpg",
+      "description": "Prolapse and extrusion of disc herniation",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Prolapse_and_extrusion_of_disc_herniation.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Prolapse_and_extrusion_of_disc_herniation.jpg",
+      "licence": "Public domain",
+      "attribution": "\u03a6\u03c9\u03c4\u03bf\u03b3\u03c1\u03b1\u03c6\u03af\u03b1 \u03b1\u03c3\u03b8\u03b5\u03bd\u03bf\u03cd\u03c2 \u0394\u03c1. \u03a7\u03b1\u03c1\u03ac\u03bb\u03b1\u03bc\u03c0\u03bf\u03c5 \u0393\u03ba\u03bf\u03cd\u03b2\u03b1 (Dr. Harrygouvas )",
+      "width": 1161,
+      "height": 774,
+      "bytes": 116616,
+      "sha256": "9c65ba82675a3a2620f65c70669901edf66fedd7c4e331cae37c159193c7a807",
+      "search_terms": "lumbar disc herniation MRI"
+    },
+    {
+      "file_name": "SPINAL_STENOSIS_JPG.jpg",
+      "body_region": "LUMBAR_SPINE",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "SPINAL STENOSIS.JPG",
+      "description": "MRI of the lumbar spine showing spinal stenosis",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:SPINAL_STENOSIS.JPG",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/SPINAL_STENOSIS.JPG",
+      "licence": "Public domain",
+      "attribution": "A. E. Francis",
+      "width": 99,
+      "height": 195,
+      "bytes": 6188,
+      "sha256": "de2ab4e0104acdd655742af397f788377d1028f52c3f39f73a6658ca28a7fba6",
+      "search_terms": "lumbar spinal stenosis MRI"
+    },
+    {
+      "file_name": "STENOTIC_CANAL_JPG.jpg",
+      "body_region": "LUMBAR_SPINE",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "STENOTIC CANAL.JPG",
+      "description": "MRI of stenosis of the lumbar spinal canal.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:STENOTIC_CANAL.JPG",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/STENOTIC_CANAL.JPG",
+      "licence": "Public domain",
+      "attribution": "A. E. Francis",
+      "width": 171,
+      "height": 177,
+      "bytes": 6855,
+      "sha256": "4d005794a20b116c372db7889088dd5640dfcff414d4970bb3171027c5fdd1b8",
+      "search_terms": "lumbar spinal stenosis MRI"
+    },
+    {
+      "file_name": "X_ray_of_a_normal_knee_by_lateral_projection_jpg.jpg",
+      "body_region": "KNEE",
+      "modality": "XRAY",
+      "finding_class": "NORMAL",
+      "title": "X-ray of a normal knee by lateral projection.jpg",
+      "description": "X-ray of the right knee of a 31 year old male, by lateral projection, showing no injuries. There's a minimal osteophyte at the superior rim of the patellofemoral joint , otherwise there is normal anatomy. Taken at Uddevalla Hospital .",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:X-ray_of_a_normal_knee_by_lateral_projection.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/X-ray_of_a_normal_knee_by_lateral_projection.jpg",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m , M.D. Author info - Reusing images - Conflicts of interest: None Mikael H\u00e4ggstr\u00f6m , M.D.",
+      "width": 934,
+      "height": 1600,
+      "bytes": 133692,
+      "sha256": "d8410e1d55e94be1efa82c08d2915cda5a85c0e4fdeae13f2f8cf5b5e74395b9",
+      "search_terms": "X-ray of a normal knee"
+    },
+    {
+      "file_name": "X_ray_of_a_normal_knee_by_anteroposterior_projection_jpg.jpg",
+      "body_region": "KNEE",
+      "modality": "XRAY",
+      "finding_class": "NORMAL",
+      "title": "X-ray of a normal knee by anteroposterior projection.jpg",
+      "description": "X-ray of the right knee of a 31 year old male, by anteroposterior projection, showing normal anatomy and no injuries. Taken at Uddevalla Hospital .",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:X-ray_of_a_normal_knee_by_anteroposterior_projection.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/X-ray_of_a_normal_knee_by_anteroposterior_projection.jpg",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m , M.D. Author info - Reusing images - Conflicts of interest: None Mikael H\u00e4ggstr\u00f6m , M.D.",
+      "width": 892,
+      "height": 1600,
+      "bytes": 116599,
+      "sha256": "ca1a0382702d6ca69762c4af78366b8e7ba3e37c6a87903bcd9e1d87960af333",
+      "search_terms": "X-ray of a normal knee"
+    },
+    {
+      "file_name": "X_ray_of_a_normal_patella_jpg.jpg",
+      "body_region": "KNEE",
+      "modality": "XRAY",
+      "finding_class": "NORMAL",
+      "title": "X-ray of a normal patella.jpg",
+      "description": "X-ray of the right patella of a 31 year old male, by slightly skew skyline view, showing normal anatomy and no injuries. Taken at Uddevalla Hospital .",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:X-ray_of_a_normal_patella.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/X-ray_of_a_normal_patella.jpg",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m , M.D. Author info - Reusing images - Conflicts of interest: None Mikael H\u00e4ggstr\u00f6m , M.D.",
+      "width": 684,
+      "height": 433,
+      "bytes": 25023,
+      "sha256": "67759aead090129337ff9f16bd5c2e5008ef9eae16bbf067b7b3e4a0bee93130",
+      "search_terms": "X-ray of a normal knee"
+    },
+    {
+      "file_name": "Proton_density_MRI_of_a_grade_2_medial_meniscal_tear_jpg.jpg",
+      "body_region": "KNEE",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "Proton density MRI of a grade 2 medial meniscal tear.jpg",
+      "description": "Proton density MRI in a coronal plane of the knee, showing a grade 2 medial meniscal tear .",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Proton_density_MRI_of_a_grade_2_medial_meniscal_tear.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Proton_density_MRI_of_a_grade_2_medial_meniscal_tear.jpg",
+      "licence": "CC BY 4.0",
+      "attribution": "Nicolas Lefevre, Jean Francois Naouri, Serge Herman,Antoine Gerometta, Shahnaz Klouche, and Yoann Bohu",
+      "width": 304,
+      "height": 308,
+      "bytes": 21254,
+      "sha256": "99111ac7b08f65a52c0670339effe6e2b9b8aeb35cbf78527e9bcd171c089772",
+      "search_terms": "knee meniscal tear MRI"
+    },
+    {
+      "file_name": "Normal_posteroanterior_PA_chest_radiograph_X_ray_jpg.jpg",
+      "body_region": "CHEST",
+      "modality": "XRAY",
+      "finding_class": "NORMAL",
+      "title": "Normal posteroanterior (PA) chest radiograph (X-ray).jpg",
+      "description": "Posteroanterior chest radiograph (\"X-ray\") taken of a 21 year old woman who presented with pain on the left side of her thorax after colliding with another player during a soccer game. It shows a normal chest without any signs of injury. Dx and Sin stand for \"right\" and \"left\" respectively.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Normal_posteroanterior_(PA)_chest_radiograph_(X-ray).jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Normal_posteroanterior_%28PA%29_chest_radiograph_%28X-ray%29.jpg",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m",
+      "width": 1398,
+      "height": 1600,
+      "bytes": 291329,
+      "sha256": "ffa495217afa3e451777863927e471600dff22011238ab0d5d2dcff0f38078f8",
+      "search_terms": "normal chest radiograph"
+    },
+    {
+      "file_name": "Normal_lateral_chest_radiograph_X_ray_jpg.jpg",
+      "body_region": "CHEST",
+      "modality": "XRAY",
+      "finding_class": "NORMAL",
+      "title": "Normal lateral chest radiograph (X-ray).jpg",
+      "description": "Lateral chest radiograph (\"X-ray\") taken of a 21 year old woman who presented with pain on the left side of her thorax after colliding with another player during a soccer game. It shows a normal chest without any signs of injury.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Normal_lateral_chest_radiograph_(X-ray).jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Normal_lateral_chest_radiograph_%28X-ray%29.jpg",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m",
+      "width": 1153,
+      "height": 1600,
+      "bytes": 259866,
+      "sha256": "7e8d403d81a31c79429601b3c1988db6c9e1e0b85f85d0c5ccdbf861df7463e9",
+      "search_terms": "normal chest radiograph"
+    },
+    {
+      "file_name": "X_ray_of_healthy_lungs_taken_at_the_Institute_of_Tropical_Medicine_in_Antwerp_on.jpg",
+      "body_region": "CHEST",
+      "modality": "XRAY",
+      "finding_class": "NORMAL",
+      "title": "X-ray of healthy lungs taken at the Institute of Tropical Medicine in Antwerp, on 9 December 2016 (1).tif",
+      "description": "X-ray of healthy lungs taken at the Institute of Tropical Medicine in Antwerp, on 9 December 2016 (1). Text visible on the radiograph: USER ID:Jverbeken@Agfa Healthcare \u2666 INSTITUUT VOOR TROPISCHE GENEESKUNDE - ANTWERPEN \u2666 VERHEYEN, VINCENT MIA, \u2666 1992.12.22 \u2666 2016.12.09 \u2666 11:41:46 \u2666 PRINT DATE: 20161209 TIME: 11:48:07 Medical analysis by Dr. J. Verbeken (combined judgement, also based on another radiograph of the subject's lungs ): The following exams were executed: \u2666 Chest X-ray: \u2666 The diaphragm is well delineated and the costo-phrenic sinuses are free. \u2666 Broncho-vascular hilar shadows. \u2666 Normal cardiac shadow. \u2666 Free apices. \u2666 Normal aeration of both lungs. \u2666 No arguments for alveolar infiltrations. \u2666 Normal aspe[c]t of the thorax skeleton. \u2666 Conclusion: \u2666 No infiltrations. No pleural effusions. No masses. \u2666 No tuberculosis. \u2666 No other contageous lung diseases. Administration number: 07004479; Reference: 161209005.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:X-ray_of_healthy_lungs_taken_at_the_Institute_of_Tropical_Medicine_in_Antwerp,_on_9_December_2016_(1).tif",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/X-ray_of_healthy_lungs_taken_at_the_Institute_of_Tropical_Medicine_in_Antwerp%2C_on_9_December_2016_%281%29.tif",
+      "licence": "Public domain",
+      "attribution": "N.a. Radiology by Dr. Johan Verbeken. Scan and image editing by Vincent Mia Edie Verheyen .",
+      "width": 1599,
+      "height": 1284,
+      "bytes": 285015,
+      "sha256": "0e8e0830d9fa7992853112e95ce70781e72c93ec32e2f69ffdc8f9d79dc7ef2c",
+      "search_terms": "normal chest radiograph"
+    },
+    {
+      "file_name": "Figure_1_Chest_radiograph_showing_a_whole_consolidation_and_or_pleural_effusion_.jpg",
+      "body_region": "CHEST",
+      "modality": "XRAY",
+      "finding_class": "ABNORMAL",
+      "title": "Figure-1-Chest-radiograph-showing-a-whole-consolidation-and--or-pleural-effusion-of-the-right-lung.jpg",
+      "description": "Figure 1 Chest radiograph showing a whole consolidation and / or pleural effusion of the right lung.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Figure-1-Chest-radiograph-showing-a-whole-consolidation-and--or-pleural-effusion-of-the-right-lung.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Figure-1-Chest-radiograph-showing-a-whole-consolidation-and--or-pleural-effusion-of-the-right-lung.jpg",
+      "licence": "CC BY 4.0",
+      "attribution": "Gensheng Zhang, Yang Yu, Shufang Zhang, Na Li, Hao Xu, Wei Cui",
+      "width": 600,
+      "height": 439,
+      "bytes": 17964,
+      "sha256": "0c9708b86a09a72d54d8c74cdfed36b2b1f6cdecfc89c2f195ba61d46cf104f4",
+      "search_terms": "pleural effusion chest radiograph"
+    },
+    {
+      "file_name": "Two_view_chest_radiograph_depicting_bilateral_pleural_effusions_webp.jpg",
+      "body_region": "CHEST",
+      "modality": "XRAY",
+      "finding_class": "ABNORMAL",
+      "title": "Two-view chest radiograph depicting bilateral pleural effusions.webp",
+      "description": "Epanchement pleural bolat\u00e9ral ao cours d'un lupus \u00e9ryth\u00e9mateux syst\u00e9mique",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Two-view_chest_radiograph_depicting_bilateral_pleural_effusions.webp",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Two-view_chest_radiograph_depicting_bilateral_pleural_effusions.webp",
+      "licence": "CC BY 4.0",
+      "attribution": "Chloe Kupelian",
+      "width": 1600,
+      "height": 836,
+      "bytes": 125679,
+      "sha256": "97c1364abec0d627fe505635208e770b4f6074e62b22e5d6338b1afeffc03722",
+      "search_terms": "pleural effusion chest radiograph"
+    },
+    {
+      "file_name": "Chest_radiograph_of_a_lung_with_Kerley_B_lines_jpg.jpg",
+      "body_region": "CHEST",
+      "modality": "XRAY",
+      "finding_class": "ABNORMAL",
+      "title": "Chest radiograph of a lung with Kerley B lines.jpg",
+      "description": "edit Chest radiograph of an 83 year old man with previous coronary artery bypass surgery and multiple percutaneous coronary interventions , now presenting with labored breathing . It shows distinct Kerley B lines , as well as an enlarged heart, somewhat dilated pulmonary blood vessels and minor pleural effusion as seen for example in the right horizontal fissure . Yet, there is no obvious lung edema. Overall, this indicated intermediate severity (stage II) congestive heart failure .",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chest_radiograph_of_a_lung_with_Kerley_B_lines.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chest_radiograph_of_a_lung_with_Kerley_B_lines.jpg",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m",
+      "width": 1222,
+      "height": 1097,
+      "bytes": 237081,
+      "sha256": "78efdffd8f929ba0456057985263330d8da1c9046370b670bfc9426dc24e5f71",
+      "search_terms": "pleural effusion chest radiograph"
+    },
+    {
+      "file_name": "CT_of_lung_infarction_with_reverse_halo_sign_png.jpg",
+      "body_region": "CHEST",
+      "modality": "CT",
+      "finding_class": "ABNORMAL",
+      "title": "CT of lung infarction with reverse halo sign.png",
+      "description": "Thorax CT of a 74-year-old man with a long-standing pulmonary embolism (having lasted 3 months) of the artery of the right lower lobe, secondary to a leg fracture, and with long-standing hemoptysis . It shows the embolism, as well as a pulmonary infarction seen as a reverse halo sign . Further information: Reverse halo sign",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CT_of_lung_infarction_with_reverse_halo_sign.png",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/CT_of_lung_infarction_with_reverse_halo_sign.png",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m , M.D. Author info - Reusing images - Conflicts of interest: None Mikael H\u00e4ggstr\u00f6m , M.D. Consent note : Written informed consent was obtained from the individual, including online publication.",
+      "width": 1194,
+      "height": 982,
+      "bytes": 242888,
+      "sha256": "62fc9c8af15f10628f0518c855a73408959b15f293925436a3e855f7aa203650",
+      "search_terms": "pulmonary embolism CT thorax"
+    },
+    {
+      "file_name": "CT_of_lung_infarction_with_reverse_halo_sign_annotated_png.jpg",
+      "body_region": "CHEST",
+      "modality": "CT",
+      "finding_class": "ABNORMAL",
+      "title": "CT of lung infarction with reverse halo sign, annotated.png",
+      "description": "Thorax CT of a 74-year-old man with a long-standing pulmonary embolism (having lasted 3 months) of the artery of the right lower lobe, secondary to a leg fracture, and with long-standing hemoptysis . It shows the embolism, as well as a pulmonary infarction (white arrow) seen as a reverse halo sign (black arrow). Further information: Reverse halo sign",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CT_of_lung_infarction_with_reverse_halo_sign,_annotated.png",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/CT_of_lung_infarction_with_reverse_halo_sign%2C_annotated.png",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m , M.D. Author info - Reusing images - Conflicts of interest: None Mikael H\u00e4ggstr\u00f6m , M.D. Consent note : Written informed consent was obtained from the individual, including online publication.",
+      "width": 439,
+      "height": 377,
+      "bytes": 43266,
+      "sha256": "177c535f139a969e2ea7391f56866b4d733facf3b4efdb4449fb11199a504a6e",
+      "search_terms": "pulmonary embolism CT thorax"
+    },
+    {
+      "file_name": "CT_of_a_normal_brain_coronal_53_png.jpg",
+      "body_region": "BRAIN",
+      "modality": "CT",
+      "finding_class": "NORMAL",
+      "title": "CT of a normal brain, coronal 53.png",
+      "description": "edit Computed tomography of the head , without intravenous contrast, here presented in the coronal plane with 4 mm slice thickness. It shows normal anatomy, with no injuries. The subject is an 18 year old male who had blunt trauma to the head after a 25 m long jump during motocross .",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CT_of_a_normal_brain,_coronal_53.png",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/CT_of_a_normal_brain%2C_coronal_53.png",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m , M.D. Author info - Reusing images - Conflicts of interest: None Mikael H\u00e4ggstr\u00f6m , M.D. Consent note : Written informed consent was obtained from the individual, including online publication.",
+      "width": 640,
+      "height": 426,
+      "bytes": 40681,
+      "sha256": "821cbc22a8a2cd6d84273cd9b1e32d4fc0ea43b482581f4d27002609489afa41",
+      "search_terms": "normal head CT"
+    },
+    {
+      "file_name": "CT_of_a_normal_brain_sagittal_20_png.jpg",
+      "body_region": "BRAIN",
+      "modality": "CT",
+      "finding_class": "NORMAL",
+      "title": "CT of a normal brain, sagittal 20.png",
+      "description": "edit Computed tomography of the head , without intravenous contrast, here presented in the sagittal plane with 4 mm slice thickness. It shows normal anatomy, with no injuries. The subject is an 18 year old male who had blunt trauma to the head after a 25 m long jump during motocross .",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CT_of_a_normal_brain,_sagittal_20.png",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/CT_of_a_normal_brain%2C_sagittal_20.png",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m , M.D. Author info - Reusing images - Conflicts of interest: None Mikael H\u00e4ggstr\u00f6m , M.D. Consent note : Written informed consent was obtained from the individual, including online publication.",
+      "width": 770,
+      "height": 430,
+      "bytes": 66429,
+      "sha256": "7fca19c93d57adc80172ef46ca69c2b3b18df60c788ff2a0942d5eb07c57dfbd",
+      "search_terms": "normal head CT"
+    },
+    {
+      "file_name": "CT_of_a_normal_brain_coronal_49_png.jpg",
+      "body_region": "BRAIN",
+      "modality": "CT",
+      "finding_class": "NORMAL",
+      "title": "CT of a normal brain, coronal 49.png",
+      "description": "edit Computed tomography of the head , without intravenous contrast, here presented in the coronal plane with 4 mm slice thickness. It shows normal anatomy, with no injuries. The subject is an 18 year old male who had blunt trauma to the head after a 25 m long jump during motocross .",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CT_of_a_normal_brain,_coronal_49.png",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/CT_of_a_normal_brain%2C_coronal_49.png",
+      "licence": "CC0",
+      "attribution": "Mikael H\u00e4ggstr\u00f6m , M.D. Author info - Reusing images - Conflicts of interest: None Mikael H\u00e4ggstr\u00f6m , M.D. Consent note : Written informed consent was obtained from the individual, including online publication.",
+      "width": 640,
+      "height": 426,
+      "bytes": 49453,
+      "sha256": "65e6fb586b7be58cc3a9b83e77727a76381de36075d0bbcba31b2f9823897b9d",
+      "search_terms": "normal head CT"
+    },
+    {
+      "file_name": "Brain_trauma_CT_jpg.jpg",
+      "body_region": "BRAIN",
+      "modality": "CT",
+      "finding_class": "ABNORMAL",
+      "title": "Brain trauma CT.jpg",
+      "description": "CT scan of patient with brain trauma. Caption reads, \"Preoperative CT scan of patient while he had a GCS of 14.\" Accompanying text in article reads, \"Emergent CT imaging revealed a sagittally oriented skull fracture extending from the vertex to the foramen magnum as well as a transverse parietal and temporal bone fracture. Multiple frontal, parietal, and temporal lobe contusions with associated interhemispheric hemorrhage and a left-sided subdural hematoma measuring 1.7 mm in greatest depth were appreciated. Effacement of the basilar cisterns was noted without shift of midline structures.\"",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Brain_trauma_CT.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Brain_trauma_CT.jpg",
+      "licence": "CC BY 2.0",
+      "attribution": "Rehman T, Ali R, Tawil I, Yonas H",
+      "width": 525,
+      "height": 572,
+      "bytes": 58418,
+      "sha256": "8902063bf6436aa0e58986dc716448dedb117196d6870ad55ef8857c941c3ed2",
+      "search_terms": "subdural hematoma CT brain"
+    },
+    {
+      "file_name": "Neuroblastoma_mets_JPG.jpg",
+      "body_region": "BRAIN",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "Neuroblastoma mets.JPG",
+      "description": "\"This is a coronal post-gadolinium T1-weighted MPRAGE* MRI of a 2 year-old female with known neuroblastoma. There are orbital and skull vault metastases, with associated enhancing soft-tissue masses. The skull lesions are extradural masses which deform the underlying brain. The right orbital lesion forms a superior extraconal mass, depressing the right globe. Neuroblastoma not uncommonly metastasises to the skull. The metastases are generally osteolytic, enlarge the bone, strip the dura from it, and produce intracranial mass effect. Other skull metastases include osteogenic sarcoma (usually osteoblastic lesions); leukaemia; Wilm\u2019s tumour; Ewing\u2019s tumour; and hepatoblastoma.\" (dr Dawes)",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Neuroblastoma_mets.JPG",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Neuroblastoma_mets.JPG",
+      "licence": "CC BY 3.0",
+      "attribution": "Dr Laughlin Dawes",
+      "width": 239,
+      "height": 293,
+      "bytes": 11457,
+      "sha256": "a8ee6422bf2cab3538b8d24f9a087d51242e23afa300074d29cec41c48d898fc",
+      "search_terms": "brain tumour MRI"
+    },
+    {
+      "file_name": "Axial_PSIR_MRI_of_a_brain_with_multiple_sclerosis_lesions_jpg.jpg",
+      "body_region": "BRAIN",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "Axial PSIR MRI of a brain with multiple sclerosis lesions.jpg",
+      "description": "Phase-sensitive inversion recovery (PSIR) MRI in the axial plane of the brain, showing lesions by multiple sclerosis . White arrow heads point at two cortical lesions and one juxtacortical lesion that were also seen on a separate DIR image . White arrows point at six more lesions that were not identified on DIR prior to PSIR. Black arrows indicate artifacts due to the partial visualization of the sulci.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Axial_PSIR_MRI_of_a_brain_with_multiple_sclerosis_lesions.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Axial_PSIR_MRI_of_a_brain_with_multiple_sclerosis_lesions.jpg",
+      "licence": "CC BY 4.0",
+      "attribution": "Article authors: Alice Favaretto, Davide Poggiali, Andrea Lazzarotto, Giuseppe Rolma, Francesco Causin, Paolo Gallo",
+      "width": 1029,
+      "height": 1176,
+      "bytes": 139089,
+      "sha256": "df7afc618fa376e5a9f25bea917454bb75dff98334da948d1b8cc44aabb57f2b",
+      "search_terms": "multiple sclerosis brain MRI lesions"
+    },
+    {
+      "file_name": "Axial_DIR_MRI_of_a_brain_with_multiple_sclerosis_lesions_jpg.jpg",
+      "body_region": "BRAIN",
+      "modality": "MRI",
+      "finding_class": "ABNORMAL",
+      "title": "Axial DIR MRI of a brain with multiple sclerosis lesions.jpg",
+      "description": "Double inversion recovery (DIR) MRI in the axial plane of the brain, showing lesions by multiple sclerosis . White circles surround two cortical lesions and one juxtacortical lesion. A separate PSIR MRI confirmed these, and also disclosed six more lesions (white arrows) that were not identified on DIR prior to PSIR.",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Axial_DIR_MRI_of_a_brain_with_multiple_sclerosis_lesions.jpg",
+      "source_file_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Axial_DIR_MRI_of_a_brain_with_multiple_sclerosis_lesions.jpg",
+      "licence": "CC BY 4.0",
+      "attribution": "Article authors: Alice Favaretto, Davide Poggiali, Andrea Lazzarotto, Giuseppe Rolma, Francesco Causin, Paolo Gallo",
+      "width": 1017,
+      "height": 1176,
+      "bytes": 143026,
+      "sha256": "3cf3dd37b077afff751ed07ac6215b8e1ae6b6461ee8241c8777887795ef5210",
+      "search_terms": "multiple sclerosis brain MRI lesions"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "File:Lumbar MRI T2-sagittal animated.gif",
+      "licence": "CC BY 4.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 10.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:Lumbar MRI T1FSE T2frFSE STIR 09.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Hernie discale L4 L5.png",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:Pseudoathletic appearance of calf muscle hypertrophy.png",
+      "licence": "CC BY-SA 4.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:3D CT reconstruction of human lumbar spine and sacrum (anterior view) - Navi Mumbai.jpg",
+      "licence": "CC BY 4.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:Spinal disc herniation stage 3.jpg",
+      "licence": "Attribution",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: Attribution"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 05.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 06.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 03.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-satgittal 04.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 11.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 09.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 12.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 08.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 07.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 02.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI t2-tse-rst-sagittal 01.jpg",
+      "licence": "CC0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Lumbar MRI T1FSE T2frFSE STIR 07.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Lumbar spinal stenosis 3 9.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Lumbar spinal stenosis 3 8.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Lumbar spinal stenosis 1 9.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Lumbar spinal stenosis 1 8.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 3 6.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 1 7.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 2 7.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 1 6.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 3 8.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 1 8.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 3 7.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 2 6.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:LumbarSpinalStenosis case1 2 8.png",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Kaudaredundanz bei fortbestehender spinaler Enge nach mikrochirurgischer Dekompression 63M - MR T2 sagittal - 001.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Lagehernia.png",
+      "licence": "Public domain",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "body region LUMBAR_SPINE not evidenced in title/description"
+    },
+    {
+      "title": "File:Kaudaredundanz bei Spinalstenose LWK 34 82W - MR T2 sagittal - 001.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Kaudaredundanz bei Spinalstenose LWK 34 82W - MR T2 sagittal - 001 - Annotation.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Kaudaredundanz bei Spinalkanalstenose 62M - MR T2 sagittal - 001.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:P1120691a.JPG",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:P1120690a-001.JPG",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Ligamenta flava Hypertrophie - MRT T2 axial.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:CT and X-ray of spondylolisthesis, and post-operative.jpg",
+      "licence": "CC BY 4.0",
+      "region": "LUMBAR_SPINE",
+      "finding": "ABNORMAL",
+      "reason": "unsuitable as a reference baseline ('post-operativ')"
+    },
+    {
+      "title": "File:MRT ACL PCL 01.jpg",
+      "licence": "CC BY-SA 2.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 2.0"
+    },
+    {
+      "title": "File:12920 2023 1472 Fig3 HTML.webp",
+      "licence": "CC BY 4.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "unsuitable as a reference baseline ('fixation')"
+    },
+    {
+      "title": "File:Stem cells, Hues 9 p 23.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:The left and right knee-joints of Frank Burgess, probably a Wellcome L0026319.jpg",
+      "licence": "CC BY 4.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "looks like a diagram or illustration, not a clinical study"
+    },
+    {
+      "title": "File:A knee joint, viewed through x-ray. Photoprint from radiogra Wellcome V0029532.jpg",
+      "licence": "CC BY 4.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "looks like a diagram or illustration, not a clinical study"
+    },
+    {
+      "title": "File:The bones of a knee joint of a young boy, viewed through x-r Wellcome V0029546.jpg",
+      "licence": "CC BY 4.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "looks like a diagram or illustration, not a clinical study"
+    },
+    {
+      "title": "File:Radiograph of a child with polymelia.jpg",
+      "licence": "CC BY 2.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "unsuitable as a reference baseline ('child')"
+    },
+    {
+      "title": "File:American practice of surgery - a complete system of the science and art of surgery (1906) (14595817178).jpg",
+      "licence": "No restrictions",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: No restrictions"
+    },
+    {
+      "title": "File:The Roentgen rays in medicine and surgery as an aid in diagnosis and as a therapeutic agent; designed for the use of practitioners and students (1903) (14571658270).jpg",
+      "licence": "No restrictions",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: No restrictions"
+    },
+    {
+      "title": "File:A text-book of radiology (1915) (14754525051).jpg",
+      "licence": "No restrictions",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: No restrictions"
+    },
+    {
+      "title": "File:Radiography and radio-therapeutics (1917) (14755591884).jpg",
+      "licence": "No restrictions",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: No restrictions"
+    },
+    {
+      "title": "File:Postoperative X-ray of normal knee prosthesis, anteroposterior view.jpg",
+      "licence": "CC0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "unsuitable as a reference baseline ('Postoperativ')"
+    },
+    {
+      "title": "File:Postoperative X-ray of normal knee prosthesis, lateral view.jpg",
+      "licence": "CC0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "unsuitable as a reference baseline ('Postoperativ')"
+    },
+    {
+      "title": "File:Postoperative X-ray of normal knee prosthesis, anteroposterior view, annotated.jpg",
+      "licence": "CC0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "unsuitable as a reference baseline ('Postoperativ')"
+    },
+    {
+      "title": "File:Postoperative X-ray of normal knee prosthesis, lateral view, annotated.jpg",
+      "licence": "CC0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "unsuitable as a reference baseline ('Postoperativ')"
+    },
+    {
+      "title": "File:CTAngioOcclusionRtPop.jpg",
+      "licence": "CC BY 4.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:Tomografia Computadorizada Joelho Direito-Esquerdo, proje\u00e7\u00e3o 3D.png",
+      "licence": "CC BY 4.0",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:The Journal of laboratory and clinical medicine (1915) (14757859436).jpg",
+      "licence": "No restrictions",
+      "region": "KNEE",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: No restrictions"
+    },
+    {
+      "title": "File:Knee plain X-ray weight bearing flexion.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "KNEE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Knee plain X-ray weight bearing.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "KNEE",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Hip-knee-ankle angle.png",
+      "licence": "CC BY 2.0",
+      "region": "KNEE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:HKA and HKS angles.jpg",
+      "licence": "CC BY 2.0",
+      "region": "KNEE",
+      "finding": "ABNORMAL",
+      "reason": "labelled ABNORMAL but no pathology term in title/description"
+    },
+    {
+      "title": "File:Normal chest radiograph which is under-inspired and is rotated.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "CHEST",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Mediastinal structures on chest X-ray.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "CHEST",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Boy chest x-ray pic.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "CHEST",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Mediastinal structures on chest X-ray, annotated.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "CHEST",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Stuve-wiedemann2.JPG",
+      "licence": "CC BY 2.0",
+      "region": "CHEST",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:Aortopulmonary window.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "CHEST",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Hampton hump bei schwerer Lungenembolie - Roe Thorax und CT axial.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "CHEST",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Ct lungenembolie.0001.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "CHEST",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Zementembolie Thorax seitlich.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "CHEST",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Zementembolie Thorax seitlich - Annotationen.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "CHEST",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Sliding uncus syndrome.tif",
+      "licence": "CC BY-SA 3.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Gorham's disease.jpg",
+      "licence": "CC BY 2.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:MRI of the brain with POLR3-HLD.jpg",
+      "licence": "CC BY 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "labelled NORMAL but the title does not say so"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (6).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (5).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (11).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (7).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (1).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (8).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (15).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (17).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (20).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (7).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (5).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (10).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (14).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (13).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (1).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (9).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (16).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (19).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (12).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain T2 Cor (14).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (21).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (2).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (19).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI Brain ADC Axial (20).jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Normal axial T2-weighted MR image of the brain.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:MRI T2 Brain axial image.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Brain-T2-axial.png",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Cavum septi pellucidi - Cavum vergae.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "BRAIN",
+      "finding": "NORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Ct-scan of the brain with an subdural hematoma.jpg",
+      "licence": "CC BY-SA 3.0",
+      "region": "BRAIN",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 3.0"
+    },
+    {
+      "title": "File:Trauma subdural arrow.jpg",
+      "licence": "Public domain",
+      "region": "BRAIN",
+      "finding": "ABNORMAL",
+      "reason": "body region BRAIN not evidenced in title/description"
+    },
+    {
+      "title": "File:Trauma subdural.jpg",
+      "licence": "Public domain",
+      "region": "BRAIN",
+      "finding": "ABNORMAL",
+      "reason": "body region BRAIN not evidenced in title/description"
+    },
+    {
+      "title": "File:Huge Meningioma.jpg",
+      "licence": "CC BY-SA 4.0",
+      "region": "BRAIN",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY-SA 4.0"
+    },
+    {
+      "title": "File:Monthly multiple sclerosis anim cropped no text.gif",
+      "licence": "Public domain",
+      "region": "BRAIN",
+      "finding": "ABNORMAL",
+      "reason": "looks like a diagram or illustration, not a clinical study"
+    },
+    {
+      "title": "File:Journal.pone.0057573.g005.png",
+      "licence": "CC BY 2.5",
+      "region": "BRAIN",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY 2.5"
+    },
+    {
+      "title": "File:Journal.pone.0057573.g005 cropped.png",
+      "licence": "CC BY 2.5",
+      "region": "BRAIN",
+      "finding": "ABNORMAL",
+      "reason": "licence not permitted: CC BY 2.5"
+    }
+  ]
+}

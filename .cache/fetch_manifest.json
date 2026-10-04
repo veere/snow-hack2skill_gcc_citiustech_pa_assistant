@@ -1,0 +1,52 @@
+{
+  "synthea": {
+    "dataset_key": "synthea",
+    "url_used": "https://synthetichealth.github.io/synthea-sample-data/downloads/synthea_sample_data_csv_apr2020.zip",
+    "url_was_fallback": false,
+    "filename": "synthea_sample_data_csv_apr2020.zip",
+    "size_bytes": 8982431,
+    "sha256": "4194b18c11eaedcf0d5d5dd448d8ac9661f14381e2ef9f109215dc42266cd38a",
+    "fetched_at": "2026-09-01T13:20:26",
+    "role": "PRIMARY - referentially intact synthetic patient population across 16 CSVs"
+  },
+  "fda_ndc": {
+    "dataset_key": "fda_ndc",
+    "url_used": "https://www.accessdata.fda.gov/cder/ndctext.zip",
+    "url_was_fallback": false,
+    "filename": "ndctext.zip",
+    "size_bytes": 10811569,
+    "sha256": "983f41fcbc2a944eebc9f358cef0353130d0dfd3702b7613dfd646b7aa6ea900",
+    "fetched_at": "2026-09-01T13:20:27",
+    "role": "Real NDC drug codes, therapeutic classes, DEA schedule"
+  },
+  "icd10cm": {
+    "dataset_key": "icd10cm",
+    "url_used": "https://www.cms.gov/files/zip/2026-code-descriptions-tabular-order.zip",
+    "url_was_fallback": false,
+    "filename": "icd10cm_2026.zip",
+    "size_bytes": 2204985,
+    "sha256": "55a9124a27ca78a4a5c41e1101eda064ec2e08d105ff9e78d1fbd1a83298ef11",
+    "fetched_at": "2026-09-01T13:20:28",
+    "role": "Real ICD-10-CM diagnosis codes + descriptions for the crosswalk"
+  },
+  "hcpcs": {
+    "dataset_key": "hcpcs",
+    "url_used": "https://www.cms.gov/files/zip/october-2026-alpha-numeric-hcpcs-file.zip",
+    "url_was_fallback": false,
+    "filename": "hcpcs_oct2026.zip",
+    "size_bytes": 2502062,
+    "sha256": "36dc098353acd706a10811883338ecc381946878fe1d37d33d196e945fd34f72",
+    "fetched_at": "2026-09-01T13:20:29",
+    "role": "Real HCPCS Level II procedure codes + descriptions"
+  },
+  "synpuf_beneficiary": {
+    "dataset_key": "synpuf_beneficiary",
+    "url_used": "https://www.cms.gov/research-statistics-data-and-systems/downloadable-public-use-files/synpufs/downloads/de1_0_2008_beneficiary_summary_file_sample_1.zip",
+    "url_was_fallback": false,
+    "filename": "de1_0_2008_beneficiary_summary_sample_1.zip",
+    "size_bytes": 3119160,
+    "sha256": "2b0c9cbfb07a6eb46d5f96472c0891275a390b686c3fa34daae8d3e53d70b18b",
+    "fetched_at": "2026-09-01T13:20:44",
+    "role": "CALIBRATION ONLY - real Medicare cost-sharing distributions used to shape synthetic accumulators. Not a row source."
+  }
+}

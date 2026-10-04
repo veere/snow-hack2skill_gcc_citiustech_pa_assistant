@@ -1,0 +1,9 @@
+{
+  "offset_days": 2314,
+  "max_source_date": "2020-04-28",
+  "reference_date": "2026-09-01",
+  "target_latest_date": "2026-08-29",
+  "recent_activity_buffer_days": 3,
+  "source_note": "Computed from Synthea encounters.csv + patients.csv; max date = 2020-04-28",
+  "computed_at": "2026-09-01T13:20:46"
+}

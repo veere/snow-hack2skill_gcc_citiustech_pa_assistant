@@ -1,0 +1,229 @@
+{
+  "cfr_42_422_subpartM": {
+    "doc_key": "cfr_42_422_subpartM",
+    "citation_id": "42 CFR 422 Subpart M",
+    "title": "42 CFR Part 422 Subpart M - Grievances, Organization Determinations and Appeals (Medicare Advantage)",
+    "authority": "CMS / HHS",
+    "url_used": "https://www.ecfr.gov/api/versioner/v1/full/2026-01-01/title-42.xml",
+    "url_was_fallback": false,
+    "params": {
+      "chapter": "IV",
+      "subchapter": "B",
+      "part": "422",
+      "subpart": "M"
+    },
+    "fmt": "ecfr_xml",
+    "filename": "cfr_42_422_subpartM.xml",
+    "size_bytes": 161918,
+    "sha256": "a5b64a0a777eac5c720c2be0c1225a447cd68cad7a5e89fc5347177cc468a2d9",
+    "licence": "Public domain (US government work)",
+    "effective_date": "2026-01-01",
+    "themes": [
+      "SLA_COMPLIANCE",
+      "PA_HISTORY_PRECEDENT",
+      "ELIGIBILITY"
+    ],
+    "fetched_at": "2026-09-01T19:54:06+00:00"
+  },
+  "cfr_42_438_subpartF": {
+    "doc_key": "cfr_42_438_subpartF",
+    "citation_id": "42 CFR 438 Subpart F",
+    "title": "42 CFR Part 438 Subpart F - Grievance and Appeal System (Medicaid Managed Care)",
+    "authority": "CMS / HHS",
+    "url_used": "https://www.ecfr.gov/api/versioner/v1/full/2026-01-01/title-42.xml",
+    "url_was_fallback": false,
+    "params": {
+      "chapter": "IV",
+      "subchapter": "C",
+      "part": "438",
+      "subpart": "F"
+    },
+    "fmt": "ecfr_xml",
+    "filename": "cfr_42_438_subpartF.xml",
+    "size_bytes": 27407,
+    "sha256": "45f664ad9503ab9bc2f65d0afecf4180c14144ad0bea2c3556e8f83bd18fed0c",
+    "licence": "Public domain (US government work)",
+    "effective_date": "2026-01-01",
+    "themes": [
+      "SLA_COMPLIANCE",
+      "BENEFITS_COVERAGE",
+      "ELIGIBILITY"
+    ],
+    "fetched_at": "2026-09-01T19:54:06+00:00"
+  },
+  "cfr_42_438_210": {
+    "doc_key": "cfr_42_438_210",
+    "citation_id": "42 CFR 438.210",
+    "title": "42 CFR 438.210 - Coverage and Authorization of Services",
+    "authority": "CMS / HHS",
+    "url_used": "https://www.ecfr.gov/api/versioner/v1/full/2026-01-01/title-42.xml",
+    "url_was_fallback": false,
+    "params": {
+      "chapter": "IV",
+      "subchapter": "C",
+      "part": "438",
+      "subpart": "D",
+      "section": "438.210"
+    },
+    "fmt": "ecfr_xml",
+    "filename": "cfr_42_438_210.xml",
+    "size_bytes": 10260,
+    "sha256": "6c82dbab018561aa8c28e0e35b7476ef089db4b9881c1b629c4efe2d2bf44c52",
+    "licence": "Public domain (US government work)",
+    "effective_date": "2026-01-01",
+    "themes": [
+      "BENEFITS_COVERAGE",
+      "CLINICAL_NECESSITY",
+      "SLA_COMPLIANCE"
+    ],
+    "fetched_at": "2026-09-01T19:54:11+00:00"
+  },
+  "cfr_29_2560_503_1": {
+    "doc_key": "cfr_29_2560_503_1",
+    "citation_id": "29 CFR 2560.503-1",
+    "title": "29 CFR 2560.503-1 - ERISA Claims Procedure",
+    "authority": "Department of Labor (EBSA)",
+    "url_used": "https://www.ecfr.gov/api/versioner/v1/full/2026-01-01/title-29.xml",
+    "url_was_fallback": false,
+    "params": {
+      "subtitle": "B",
+      "chapter": "XXV",
+      "subchapter": "L",
+      "part": "2560",
+      "section": "2560.503-1"
+    },
+    "fmt": "ecfr_xml",
+    "filename": "cfr_29_2560_503_1.xml",
+    "size_bytes": 58229,
+    "sha256": "934ec76df9e3f537bc20e80e6807c47d6f52aa449c32b70a187c7205033728dd",
+    "licence": "Public domain (US government work)",
+    "effective_date": "2026-01-01",
+    "themes": [
+      "SLA_COMPLIANCE",
+      "ELIGIBILITY",
+      "PA_HISTORY_PRECEDENT"
+    ],
+    "fetched_at": "2026-09-01T19:54:16+00:00"
+  },
+  "cms_0057_f_pdf": {
+    "doc_key": "cms_0057_f_pdf",
+    "citation_id": "CMS-0057-F (89 FR 8758)",
+    "title": "CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F), 89 FR 8758",
+    "authority": "CMS / HHS",
+    "url_used": "https://www.govinfo.gov/content/pkg/FR-2024-02-08/pdf/2024-00895.pdf",
+    "url_was_fallback": false,
+    "params": {},
+    "fmt": "pdf",
+    "filename": "cms_0057_f_pdf.pdf",
+    "size_bytes": 17334855,
+    "sha256": "e9b51bc7b47ddbbf878f515ecb6c1b50e65c49e16129daade8aca39933e7c695",
+    "licence": "Public domain (US government work)",
+    "effective_date": "2024-02-08",
+    "themes": [
+      "SLA_COMPLIANCE",
+      "PA_HISTORY_PRECEDENT",
+      "PROVIDER_NETWORK"
+    ],
+    "fetched_at": "2026-09-01T19:55:34+00:00"
+  },
+  "cms_0057_f_meta": {
+    "doc_key": "cms_0057_f_meta",
+    "citation_id": "FR Doc. 2024-00895",
+    "title": "CMS-0057-F Federal Register metadata and structured full text",
+    "authority": "Office of the Federal Register",
+    "url_used": "https://www.federalregister.gov/api/v1/documents/2024-00895.json",
+    "url_was_fallback": false,
+    "params": {},
+    "fmt": "fr_json",
+    "filename": "cms_0057_f_meta.json",
+    "size_bytes": 40346,
+    "sha256": "ec097107dc9bf55137706b06b214a2f89c7951fd7bb421707a68272f8befc693",
+    "licence": "Public domain (US government work)",
+    "effective_date": "2024-02-08",
+    "themes": [
+      "SLA_COMPLIANCE"
+    ],
+    "fetched_at": "2026-09-01T19:55:34+00:00"
+  },
+  "cms_mcm_ch4": {
+    "doc_key": "cms_mcm_ch4",
+    "citation_id": "CMS Pub. 100-16 Ch. 4",
+    "title": "Medicare Managed Care Manual, Chapter 4 - Benefits and Beneficiary Protections",
+    "authority": "CMS",
+    "url_used": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/mc86c04.pdf",
+    "url_was_fallback": false,
+    "params": {},
+    "fmt": "pdf",
+    "filename": "cms_mcm_ch4.pdf",
+    "size_bytes": 534918,
+    "sha256": "1f75eb95991870a2aadc1b0f3e69362b1863a37102e22f2ed5d2bc25cb099d1a",
+    "licence": "Public domain (US government work)",
+    "effective_date": "",
+    "themes": [
+      "BENEFITS_COVERAGE",
+      "CLINICAL_NECESSITY",
+      "ELIGIBILITY"
+    ],
+    "fetched_at": "2026-09-01T19:55:35+00:00"
+  },
+  "cms_bpm_ch16": {
+    "doc_key": "cms_bpm_ch16",
+    "citation_id": "CMS Pub. 100-02 Ch. 16",
+    "title": "Medicare Benefit Policy Manual, Chapter 16 - General Exclusions from Coverage",
+    "authority": "CMS",
+    "url_used": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/bp102c16.pdf",
+    "url_was_fallback": false,
+    "params": {},
+    "fmt": "pdf",
+    "filename": "cms_bpm_ch16.pdf",
+    "size_bytes": 364593,
+    "sha256": "5371c3cbbfcefb08fcc3be50b897eacbe567e99c376fae0218af87e32ae419d4",
+    "licence": "Public domain (US government work)",
+    "effective_date": "",
+    "themes": [
+      "BENEFITS_COVERAGE"
+    ],
+    "fetched_at": "2026-09-01T19:55:36+00:00"
+  },
+  "oig_oei_09_18_00260": {
+    "doc_key": "oig_oei_09_18_00260",
+    "citation_id": "OIG OEI-09-18-00260",
+    "title": "HHS OIG - Some Medicare Advantage Organization Denials of Prior Authorization Requests Raise Concerns About Beneficiary Access to Medically Necessary Care",
+    "authority": "HHS Office of Inspector General",
+    "url_used": "https://www.oig.hhs.gov/oei/reports/OEI-09-18-00260.pdf",
+    "url_was_fallback": false,
+    "params": {},
+    "fmt": "pdf",
+    "filename": "oig_oei_09_18_00260.pdf",
+    "size_bytes": 967384,
+    "sha256": "45a7cb665efe0b83479e21e09d12182af6e13e7cec531ef5ed720d48729089e3",
+    "licence": "Public domain (US government work)",
+    "effective_date": "2022-04-01",
+    "themes": [
+      "PA_HISTORY_PRECEDENT",
+      "CLINICAL_NECESSITY",
+      "SLA_COMPLIANCE"
+    ],
+    "fetched_at": "2026-09-01T19:55:37+00:00"
+  },
+  "tx_ins_4201": {
+    "doc_key": "tx_ins_4201",
+    "citation_id": "Tex. HB 3459 (87R) / Tex. Ins. Code 4201.651-4201.659",
+    "title": "Texas HB 3459 (87R, enrolled) - Preauthorization Exemptions for Physicians and Health Care Providers, amending Insurance Code Ch. 4201",
+    "authority": "Texas Legislature",
+    "url_used": "https://capitol.texas.gov/tlodocs/87R/billtext/pdf/HB03459F.pdf",
+    "url_was_fallback": false,
+    "params": {},
+    "fmt": "pdf",
+    "filename": "tx_ins_4201.pdf",
+    "size_bytes": 150755,
+    "sha256": "c14013d1f2b8cda9e416174784b5c54ee3628ed47f8cf202320d7277bc49babd",
+    "licence": "Public domain (Texas state government work)",
+    "effective_date": "2022-01-01",
+    "themes": [
+      "PROVIDER_NETWORK",
+      "PA_HISTORY_PRECEDENT"
+    ],
+    "fetched_at": "2026-09-01T20:01:05+00:00"
+  }
+}
